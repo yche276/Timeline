@@ -1,0 +1,3 @@
+[submodule "DigitalMtLib"]
+	path = DigitalMtLib
+	url = https://github.com/yche276/DigitalMtLib.git
