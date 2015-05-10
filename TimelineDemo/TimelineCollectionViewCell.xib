@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimelineCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-br-xno">
+                        <rect key="frame" x="8" y="371" width="184" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-Ew-KwY" customClass="MZProfilePhotoView">
+                        <rect key="frame" x="35" y="8" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="PBp-0j-cr2"/>
+                            <constraint firstAttribute="width" constant="130" id="VRl-aU-wz8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4cC-br-xno" firstAttribute="centerX" secondItem="ucM-Ew-KwY" secondAttribute="centerX" id="7UI-ok-pvd"/>
+                <constraint firstItem="ucM-Ew-KwY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="D0V-4o-IYY"/>
+                <constraint firstItem="4cC-br-xno" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailingMargin" id="E5l-SQ-QCp"/>
+                <constraint firstItem="4cC-br-xno" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="oHv-R7-rfW"/>
+                <constraint firstItem="4cC-br-xno" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="roX-Ww-Uh6"/>
+                <constraint firstItem="ucM-Ew-KwY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="zjO-yY-5HR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="D0V-4o-IYY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="profilePhotoView" destination="ucM-Ew-KwY" id="cdr-ib-4TE"/>
+                <outlet property="textLabel" destination="4cC-br-xno" id="8FJ-ub-qvR"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
