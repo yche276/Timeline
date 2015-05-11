@@ -150,9 +150,9 @@ static NSString * const NumberCellKind = @"NumberCell";
 //    if ([self.collectionView numberOfSections] % self.numberOfColumns) {
 //        rowCount++;
 //    }
-    rowCount += 0.5f;
-    CGFloat height = self.itemSize.height*(rowCount/2) + self.dateHeight*(rowCount/2) + (rowCount - 1) * self.interItemSpacingY ;
-
+//    rowCount += 0.5f;
+//    CGFloat height = self.itemSize.height*(rowCount/2) + self.dateHeight*(rowCount/2) + (rowCount - 1) * self.interItemSpacingY ;
+    CGFloat height = self.itemInsets.top + self.itemSize.height+self.itemSize.height*(rowCount-1)*0.5 + (rowCount)*self.interItemSpacingY + self.itemInsets.bottom;
     return CGSizeMake(self.collectionView.bounds.size.width, height);
 }
 
