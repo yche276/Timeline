@@ -7,6 +7,7 @@
 //
 
 #import "TimelineView.h"
+#import "DigitalMt.h"
 
 @implementation TimelineView
 
@@ -15,6 +16,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
+    
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     
     CGContextRef context = UIGraphicsGetCurrentContext();

@@ -15,4 +15,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *weekdayLabel;
 @property (strong, nonatomic) IBOutlet UILabel *monthLabel;
 
+
+@property (assign, nonatomic)  BOOL typeSwitch;
 @end

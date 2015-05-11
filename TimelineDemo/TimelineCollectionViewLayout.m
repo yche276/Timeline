@@ -9,9 +9,7 @@
 #import "TimelineCollectionViewLayout.h"
 #import "AppDelegate.h"
 
-#define IS_IPHONE           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define IS_IPAD             (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-
+#import "DigitalMt.h"
 
 
 static NSString * const TimelineCellKind = @"TimelineCell";
@@ -57,7 +55,7 @@ static NSString * const NumberCellKind = @"NumberCell";
 
 - (void)setup
 {
-    self.dateHeight = 50;
+    self.dateHeight = IS_IPHONE?50:70;
     self.numberHeight = IS_IPHONE?50:70;
     
     
@@ -178,7 +176,7 @@ static NSString * const NumberCellKind = @"NumberCell";
     CGFloat originX = floorf(self.itemInsets.left + (self.itemSize.width + spacingX) * prmColumn);
     CGFloat originY = floor(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * prmRow);
     
-    CGFloat width = self.itemSize.width*1.3;
+    CGFloat width = self.itemSize.width*1.5;
     CGFloat height = self.dateHeight;
     CGFloat Y = originY-(self.itemSize.height*0.5f)*prmRow;
     Y = Y<0?originY:Y;
@@ -189,7 +187,7 @@ static NSString * const NumberCellKind = @"NumberCell";
         resultRect = CGRectMake(X, Y, width, height);
     }
     else {// timeline_object--number--date
-        CGFloat X = originX-(self.itemSize.width*0.3f);
+        CGFloat X = originX-(self.itemSize.width*0.5f);
         resultRect =  CGRectMake(X, Y, width, height);
     }
     return resultRect;

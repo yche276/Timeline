@@ -10,6 +10,7 @@
 		DC13F5BE1AFF604D00017A33 /* NumberCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC13F5BC1AFF604D00017A33 /* NumberCollectionViewCell.m */; };
 		DC13F5BF1AFF604D00017A33 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */; };
 		DC13F5C31AFF606200017A33 /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC13F5C21AFF606200017A33 /* NumberView.m */; };
+		DC953B101B00A16500374724 /* DateCollectionViewCell-RightSide.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */; };
 		DCA09E801AFDF27D00D96118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E7F1AFDF27D00D96118 /* main.m */; };
 		DCA09E831AFDF27D00D96118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E821AFDF27D00D96118 /* AppDelegate.m */; };
 		DCA09E861AFDF27D00D96118 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E851AFDF27D00D96118 /* ViewController.m */; };
@@ -65,6 +66,7 @@
 		DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC13F5C11AFF606200017A33 /* NumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
 		DC13F5C21AFF606200017A33 /* NumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
+		DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DateCollectionViewCell-RightSide.xib"; sourceTree = "<group>"; };
 		DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA09E7E1AFDF27D00D96118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA09E7F1AFDF27D00D96118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				DCA09EB11AFE03B100D96118 /* DateCollectionViewCell.h */,
 				DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */,
 				DCA09EB31AFE03B100D96118 /* DateCollectionViewCell.xib */,
+				DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */,
 				DCA09E8A1AFDF27D00D96118 /* Images.xcassets */,
 				DCA09E8C1AFDF27D00D96118 /* LaunchScreen.xib */,
 				DCA09E7D1AFDF27D00D96118 /* Supporting Files */,
@@ -307,6 +310,7 @@
 				DCA09E891AFDF27D00D96118 /* Main.storyboard in Resources */,
 				DCA09EB01AFE039C00D96118 /* TimelineCollectionViewCell.xib in Resources */,
 				DCA09E8E1AFDF27D00D96118 /* LaunchScreen.xib in Resources */,
+				DC953B101B00A16500374724 /* DateCollectionViewCell-RightSide.xib in Resources */,
 				DCA09EB51AFE03B100D96118 /* DateCollectionViewCell.xib in Resources */,
 				DCA09E8B1AFDF27D00D96118 /* Images.xcassets in Resources */,
 				DC13F5BF1AFF604D00017A33 /* NumberCollectionViewCell.xib in Resources */,

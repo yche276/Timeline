@@ -11,7 +11,7 @@
 
 @implementation NumberView
 - (void)make{
-    _drawInnerShadow = YES;
+    _drawInnerShadow = NO;
     self.type = OutlineTypeOval;
     self.strokeWidth = 2;
     self.strokeColor = mzcolor(214, 206, 207, 1.0f);

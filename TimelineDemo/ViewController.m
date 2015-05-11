@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "DateCollectionViewCell.h"
+
 #import "TimelineCollectionViewCell.h"
 #import "NumberCollectionViewCell.h"
 
@@ -17,9 +18,22 @@
 
 
 static NSString *_timelineCellIdentifier = @"TIMELINE_CELL";
+
 static NSString *_dateCellIdentifier = @"DATE_CELL";
+static NSString *_dateCellRightSideIdentifier = @"DATE_RIGHT_SIDE_CELL";
+
 static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
+
+
+
+
+
+
+
+
 @interface ViewController () {
+    
+    
    
 }
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -38,8 +52,22 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
 
     
     [self.collectionView registerClass:[TimelineCollectionViewCell class] forCellWithReuseIdentifier:_timelineCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([TimelineCollectionViewCell class]) bundle:[NSBundle mainBundle]]
+          forCellWithReuseIdentifier:_timelineCellIdentifier];
+
+    
     [self.collectionView registerClass:[DateCollectionViewCell class] forCellWithReuseIdentifier:_dateCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DateCollectionViewCell class]) bundle:[NSBundle mainBundle]]
+          forCellWithReuseIdentifier:_dateCellIdentifier];
+    
+//    [self.collectionView registerClass:[DateRightSideCollectionViewCell class] forCellWithReuseIdentifier:_dateCellRightSideIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DateCollectionViewCell-RightSide" bundle:[NSBundle mainBundle]]
+          forCellWithReuseIdentifier:_dateCellRightSideIdentifier];
+    
+    
     [self.collectionView registerClass:[NumberCollectionViewCell class] forCellWithReuseIdentifier:_numberCellllIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([NumberCollectionViewCell class]) bundle:[NSBundle mainBundle]]
+          forCellWithReuseIdentifier:_numberCellllIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,6 +144,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
         
             dateCell.backgroundColor = [UIColor clearColor];
         
+            dateCell.typeSwitch = YES;
         }
     }
     else {// timeline_object--number--date
@@ -133,7 +162,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
             numberCell.numView.titleLabel.text = [NSString stringWithFormat:@"%ld", row+1];
         }
         else if (column == 2) {
-            cell = (DateCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:_dateCellIdentifier forIndexPath:indexPath];
+            cell = (DateCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:_dateCellRightSideIdentifier forIndexPath:indexPath];
             
             
             NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
@@ -158,6 +187,8 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
             dateCell.dayLabel.textColor = mzcolor(52, 49, 52, 1.0f);
             
             dateCell.backgroundColor = [UIColor clearColor];
+            
+            dateCell.typeSwitch = NO;
             
         }
     }
