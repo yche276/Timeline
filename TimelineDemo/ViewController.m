@@ -38,7 +38,11 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
 }
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) IBOutlet TimelineCollectionViewLayout *layout;
+@property (strong, nonatomic) NSMutableArray *items;
 
+
+//Action Methods
+-(IBAction)onAddBtn:(id)sender;
 @end
 
 @implementation ViewController
@@ -46,6 +50,14 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Timeline";
+    
+    self.items = [NSMutableArray arrayWithObjects:@"AAA", nil];
+
+    UIBarButtonItem *addBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onAddBtn:)];
+    addBarItem.tintColor = [UIColor blackColor];
+    self.navigationItem.rightBarButtonItem = addBarItem;
     
 //    self.collectionView.pagingEnabled = YES;
     self.collectionView.backgroundColor = mzcolor(239, 237, 237, 1.0f);
@@ -86,7 +98,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 15*3;//must mutiple by 3(3 items in each row), for example 15 days, there must be 45 items in total
+    return self.items.count*3;//must mutiple by 3(3 items in each row), for example 15 days, there must be 45 items in total
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -204,6 +216,36 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
     NSLog(@"clicked on Row:%ld", (long)row);
 }
 
+
+#pragma mark - Action Methods
+-(IBAction)onAddBtn:(id)sender{
+    
+    //    [self.collectionView reloadData];NSInteger section = [self numberOfSectionsInCollectionView:collectionView] - 1;
+    
+    
+    NSIndexPath *indexPath0 = [NSIndexPath indexPathForItem:self.items.count*3 inSection:0];
+    NSIndexPath *indexPath1 = [NSIndexPath indexPathForItem:1+self.items.count*3  inSection:0];
+    NSIndexPath *indexPath2 = [NSIndexPath indexPathForItem:2+self.items.count*3 inSection:0];
+    
+    [self.items addObject:@"aaa"];
+    self.collectionView.contentSize = CGSizeMake(self.collectionView.contentSize.width,
+                                                 self.collectionView.contentSize.height+(self.layout.itemSize.height*0.5));
+    
+//    CGRect targetRect = CGRectMake(0,  self.collectionView.contentSize.height, 100, 10);
+//    
+//    [self.collectionView scrollRectToVisible:targetRect animated:YES];
+    
+//    CGPoint bottomOffset = CGPointMake(0, self.collectionView.contentSize.height-self.collectionView.bounds.size.height);
+//    [self.collectionView setContentOffset:bottomOffset animated:NO];
+    
+    
+     [self.collectionView insertItemsAtIndexPaths:@[indexPath0, indexPath1, indexPath2]];
+    
+    
+    NSInteger item = [self collectionView:self.collectionView numberOfItemsInSection:0] - 1;
+    NSIndexPath *lastIndexPath = [NSIndexPath indexPathForItem:item inSection:0];
+    [self.collectionView scrollToItemAtIndexPath:lastIndexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
+}
 
 
 @end

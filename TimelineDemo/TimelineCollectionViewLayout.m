@@ -11,6 +11,8 @@
 
 #import "DigitalMt.h"
 
+#import "UICollectionViewLayoutAttributesWithAnimation.h"
+
 
 static NSString * const TimelineCellKind = @"TimelineCell";
 static NSString * const DateCellKind = @"DateCell";
@@ -32,6 +34,11 @@ static NSString * const NumberCellKind = @"NumberCell";
 
 @implementation TimelineCollectionViewLayout
 #pragma mark - Lifecycle
+
++ (Class)layoutAttributesClass {
+    return [UICollectionViewLayoutAttributesWithAnimation class];
+}
+
 
 - (id)init
 {
@@ -99,16 +106,34 @@ static NSString * const NumberCellKind = @"NumberCell";
         for (NSInteger item = 0; item < itemCount; item++) {
             indexPath = [NSIndexPath indexPathForItem:item inSection:section];
             
-            UICollectionViewLayoutAttributes *itemAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+            UICollectionViewLayoutAttributesWithAnimation *itemAttributes = [UICollectionViewLayoutAttributesWithAnimation layoutAttributesForCellWithIndexPath:indexPath];
             itemAttributes.frame = [self frameForCellAtIndexPath:indexPath];
             
             cellLayoutInfo[indexPath] = itemAttributes;
         }
     }
-    
     newLayoutInfo[TimelineCellKind] = cellLayoutInfo;
-    
     self.layoutInfo = newLayoutInfo;
+}
+
+- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
+    UICollectionViewLayoutAttributesWithAnimation* attributes = (UICollectionViewLayoutAttributesWithAnimation* )[super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
+    
+    CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    transformAnimation.duration = 0.5f;
+    
+    
+    CGFloat width = [self collectionViewContentSize].width;
+    transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(2*width, 0, 0)];
+    transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(attributes.bounds.origin.x, 0, 0)];
+    
+//    CGFloat height = [self collectionViewContentSize].height;
+//    transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(0, 2*height, height)];
+//    transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(0, attributes.bounds.origin.y, 0)];
+    transformAnimation.removedOnCompletion = NO;
+    transformAnimation.fillMode = kCAFillModeForwards;
+    attributes.animation = transformAnimation;
+    return attributes;
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
@@ -121,6 +146,7 @@ static NSString * const NumberCellKind = @"NumberCell";
         [elementsInfo enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *indexPath,
                                                           UICollectionViewLayoutAttributes *attributes,
                                                           BOOL *innerStop) {
+         
             if (CGRectIntersectsRect(rect, attributes.frame)) {
                 [allAttributes addObject:attributes];
             }
@@ -130,13 +156,11 @@ static NSString * const NumberCellKind = @"NumberCell";
     return allAttributes;
 }
 
+
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return self.layoutInfo[TimelineCellKind][indexPath];
 }
-
-
-
 
 - (CGSize)collectionViewContentSize
 {
@@ -150,8 +174,6 @@ static NSString * const NumberCellKind = @"NumberCell";
 //    if ([self.collectionView numberOfSections] % self.numberOfColumns) {
 //        rowCount++;
 //    }
-//    rowCount += 0.5f;
-//    CGFloat height = self.itemSize.height*(rowCount/2) + self.dateHeight*(rowCount/2) + (rowCount - 1) * self.interItemSpacingY ;
     CGFloat height = self.itemInsets.top + self.itemSize.height+self.itemSize.height*(rowCount-1)*0.5 + (rowCount)*self.interItemSpacingY + self.itemInsets.bottom;
     return CGSizeMake(self.collectionView.bounds.size.width, height);
 }

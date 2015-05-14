@@ -24,6 +24,7 @@
 		DCA09EB01AFE039C00D96118 /* TimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA09EAE1AFE039C00D96118 /* TimelineCollectionViewCell.xib */; };
 		DCA09EB41AFE03B100D96118 /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */; };
 		DCA09EB51AFE03B100D96118 /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA09EB31AFE03B100D96118 /* DateCollectionViewCell.xib */; };
+		DCB27E9A1B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB27E991B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m */; };
 		DCE51FC71AFE3498000F5763 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE51FC61AFE3498000F5763 /* CoreMotion.framework */; };
 		DCE51FC81AFE34C8000F5763 /* libMtZendoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE51FC11AFE3478000F5763 /* libMtZendoLib.a */; };
 		DCE51FCA1AFE358B000F5763 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE51FC91AFE358B000F5763 /* CoreData.framework */; };
@@ -77,7 +78,7 @@
 		DCA09E881AFDF27D00D96118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCA09E8A1AFDF27D00D96118 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCA09E8D1AFDF27D00D96118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DCA09E931AFDF27D00D96118 /* TimelineDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA09E981AFDF27D00D96118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA09E991AFDF27D00D96118 /* TimelineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineDemoTests.m; sourceTree = "<group>"; };
 		DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -90,6 +91,8 @@
 		DCA09EB11AFE03B100D96118 /* DateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCollectionViewCell.h; sourceTree = "<group>"; };
 		DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCollectionViewCell.m; sourceTree = "<group>"; };
 		DCA09EB31AFE03B100D96118 /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
+		DCB27E981B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLayoutAttributesWithAnimation.h; sourceTree = "<group>"; };
+		DCB27E991B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLayoutAttributesWithAnimation.m; sourceTree = "<group>"; };
 		DCE51FBB1AFE3477000F5763 /* MtZendoLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MtZendoLib.xcodeproj; path = DigitalMtLib/MtZendoLib.xcodeproj; sourceTree = "<group>"; };
 		DCE51FC61AFE3498000F5763 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DCE51FC91AFE358B000F5763 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -132,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */,
-				DCA09E931AFDF27D00D96118 /* TimelineDemoTests.xctest */,
+				DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +152,8 @@
 				DCA09EAA1AFDF9C300D96118 /* TimelineView.m */,
 				DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */,
 				DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */,
+				DCB27E981B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.h */,
+				DCB27E991B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m */,
 				DC13F5C11AFF606200017A33 /* NumberView.h */,
 				DC13F5C21AFF606200017A33 /* NumberView.m */,
 				DC13F5BB1AFF604D00017A33 /* NumberCollectionViewCell.h */,
@@ -206,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCA09E791AFDF27D00D96118 /* TimelineDemo */ = {
+		DCA09E791AFDF27D00D96118 /* Timeline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCA09E9D1AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineDemo" */;
+			buildConfigurationList = DCA09E9D1AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "Timeline" */;
 			buildPhases = (
 				DCA09E761AFDF27D00D96118 /* Sources */,
 				DCA09E771AFDF27D00D96118 /* Frameworks */,
@@ -219,14 +224,14 @@
 			dependencies = (
 				DCE51FC51AFE348E000F5763 /* PBXTargetDependency */,
 			);
-			name = TimelineDemo;
+			name = Timeline;
 			productName = TimelineDemo;
 			productReference = DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCA09E921AFDF27D00D96118 /* TimelineDemoTests */ = {
+		DCA09E921AFDF27D00D96118 /* TimelineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineDemoTests" */;
+			buildConfigurationList = DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineTests" */;
 			buildPhases = (
 				DCA09E8F1AFDF27D00D96118 /* Sources */,
 				DCA09E901AFDF27D00D96118 /* Frameworks */,
@@ -237,9 +242,9 @@
 			dependencies = (
 				DCA09E951AFDF27D00D96118 /* PBXTargetDependency */,
 			);
-			name = TimelineDemoTests;
+			name = TimelineTests;
 			productName = TimelineDemoTests;
-			productReference = DCA09E931AFDF27D00D96118 /* TimelineDemoTests.xctest */;
+			productReference = DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DCA09E751AFDF27D00D96118 /* Build configuration list for PBXProject "TimelineDemo" */;
+			buildConfigurationList = DCA09E751AFDF27D00D96118 /* Build configuration list for PBXProject "Timeline" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,8 +284,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				DCA09E791AFDF27D00D96118 /* TimelineDemo */,
-				DCA09E921AFDF27D00D96118 /* TimelineDemoTests */,
+				DCA09E791AFDF27D00D96118 /* Timeline */,
+				DCA09E921AFDF27D00D96118 /* TimelineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +344,7 @@
 				DCA09E801AFDF27D00D96118 /* main.m in Sources */,
 				DC13F5BE1AFF604D00017A33 /* NumberCollectionViewCell.m in Sources */,
 				DCA09EA81AFDF96700D96118 /* TimelineCollectionViewLayout.m in Sources */,
+				DCB27E9A1B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m in Sources */,
 				DCA09EAB1AFDF9C300D96118 /* TimelineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +362,7 @@
 /* Begin PBXTargetDependency section */
 		DCA09E951AFDF27D00D96118 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DCA09E791AFDF27D00D96118 /* TimelineDemo */;
+			target = DCA09E791AFDF27D00D96118 /* Timeline */;
 			targetProxy = DCA09E941AFDF27D00D96118 /* PBXContainerItemProxy */;
 		};
 		DCE51FC51AFE348E000F5763 /* PBXTargetDependency */ = {
@@ -528,7 +534,7 @@
 				);
 				INFOPLIST_FILE = TimelineDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimelineTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimelineDemo.app/TimelineDemo";
 			};
 			name = Debug;
@@ -543,7 +549,7 @@
 				);
 				INFOPLIST_FILE = TimelineDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimelineTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimelineDemo.app/TimelineDemo";
 			};
 			name = Release;
@@ -551,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DCA09E751AFDF27D00D96118 /* Build configuration list for PBXProject "TimelineDemo" */ = {
+		DCA09E751AFDF27D00D96118 /* Build configuration list for PBXProject "Timeline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCA09E9B1AFDF27D00D96118 /* Debug */,
@@ -560,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCA09E9D1AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineDemo" */ = {
+		DCA09E9D1AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "Timeline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCA09E9E1AFDF27D00D96118 /* Debug */,
@@ -569,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineDemoTests" */ = {
+		DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCA09EA11AFDF27D00D96118 /* Debug */,

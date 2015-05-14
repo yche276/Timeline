@@ -7,6 +7,7 @@
 //
 
 #import "NumberCollectionViewCell.h"
+#import "UICollectionViewLayoutAttributesWithAnimation.h"
 
 @implementation NumberCollectionViewCell
 
@@ -34,4 +35,13 @@
     return self;
 }
 
+- (void) applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+{
+    if ([layoutAttributes isKindOfClass:[UICollectionViewLayoutAttributesWithAnimation class]]) {
+        UICollectionViewLayoutAttributesWithAnimation *attri = (UICollectionViewLayoutAttributesWithAnimation *)layoutAttributes;
+        [[self layer] addAnimation:attri.animation
+                            forKey:@"transform"];
+    }
+
+}
 @end

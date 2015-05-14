@@ -9,6 +9,7 @@
 #import "DateCollectionViewCell.h"
 #import "DigitalMt.h"
 
+#import "UICollectionViewLayoutAttributesWithAnimation.h"
 @implementation DateCollectionViewCell
 
 - (void)awakeFromNib {
@@ -75,5 +76,16 @@
     CGContextStrokePath(context);
 }
 
+
+- (void) applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+{
+    if ([layoutAttributes isKindOfClass:[UICollectionViewLayoutAttributesWithAnimation class]]) {
+        UICollectionViewLayoutAttributesWithAnimation *attri = (UICollectionViewLayoutAttributesWithAnimation *)layoutAttributes;
+        [[self layer] addAnimation:attri.animation
+                            forKey:@"transform"];
+    }
+    
+    
+}
 
 @end

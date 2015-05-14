@@ -7,7 +7,7 @@
 //
 
 #import "TimelineCollectionViewCell.h"
-
+#import "UICollectionViewLayoutAttributesWithAnimation.h"
 
 @implementation TimelineCollectionViewCell
 
@@ -36,7 +36,15 @@
 }
 
 
+- (void) applyLayoutAttributes:(UICollectionViewLayoutAttributesWithAnimation *)layoutAttributes
+{
+    if ([layoutAttributes isKindOfClass:[UICollectionViewLayoutAttributesWithAnimation class]]) {
+        UICollectionViewLayoutAttributesWithAnimation *attri = (UICollectionViewLayoutAttributesWithAnimation *)layoutAttributes;
+        [[self layer] addAnimation:attri.animation
+                            forKey:@"transform"];
+    }
 
+}
 
 
 
