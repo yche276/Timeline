@@ -19,7 +19,7 @@
 		DCA09E8E1AFDF27D00D96118 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA09E8C1AFDF27D00D96118 /* LaunchScreen.xib */; };
 		DCA09E9A1AFDF27D00D96118 /* TimelineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E991AFDF27D00D96118 /* TimelineDemoTests.m */; };
 		DCA09EA81AFDF96700D96118 /* TimelineCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */; };
-		DCA09EAB1AFDF9C300D96118 /* TimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EAA1AFDF9C300D96118 /* TimelineView.m */; };
+		DCA09EAB1AFDF9C300D96118 /* TimelineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EAA1AFDF9C300D96118 /* TimelineCollectionView.m */; };
 		DCA09EAF1AFE039C00D96118 /* TimelineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EAD1AFE039C00D96118 /* TimelineCollectionViewCell.m */; };
 		DCA09EB01AFE039C00D96118 /* TimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA09EAE1AFE039C00D96118 /* TimelineCollectionViewCell.xib */; };
 		DCA09EB41AFE03B100D96118 /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */; };
@@ -83,8 +83,8 @@
 		DCA09E991AFDF27D00D96118 /* TimelineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineDemoTests.m; sourceTree = "<group>"; };
 		DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCollectionViewLayout.h; sourceTree = "<group>"; };
 		DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineCollectionViewLayout.m; sourceTree = "<group>"; };
-		DCA09EA91AFDF9C300D96118 /* TimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineView.h; sourceTree = "<group>"; };
-		DCA09EAA1AFDF9C300D96118 /* TimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineView.m; sourceTree = "<group>"; };
+		DCA09EA91AFDF9C300D96118 /* TimelineCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCollectionView.h; sourceTree = "<group>"; };
+		DCA09EAA1AFDF9C300D96118 /* TimelineCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineCollectionView.m; sourceTree = "<group>"; };
 		DCA09EAC1AFE039C00D96118 /* TimelineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCollectionViewCell.h; sourceTree = "<group>"; };
 		DCA09EAD1AFE039C00D96118 /* TimelineCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineCollectionViewCell.m; sourceTree = "<group>"; };
 		DCA09EAE1AFE039C00D96118 /* TimelineCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -119,6 +119,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC62B4381B04A99300158525 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				DCA09EA91AFDF9C300D96118 /* TimelineCollectionView.h */,
+				DCA09EAA1AFDF9C300D96118 /* TimelineCollectionView.m */,
+				DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */,
+				DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */,
+				DCB27E981B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.h */,
+				DCB27E991B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m */,
+				DC13F5C11AFF606200017A33 /* NumberView.h */,
+				DC13F5C21AFF606200017A33 /* NumberView.m */,
+				DC13F5BB1AFF604D00017A33 /* NumberCollectionViewCell.h */,
+				DC13F5BC1AFF604D00017A33 /* NumberCollectionViewCell.m */,
+				DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */,
+				DCA09EAC1AFE039C00D96118 /* TimelineCollectionViewCell.h */,
+				DCA09EAD1AFE039C00D96118 /* TimelineCollectionViewCell.m */,
+				DCA09EAE1AFE039C00D96118 /* TimelineCollectionViewCell.xib */,
+				DCA09EB11AFE03B100D96118 /* DateCollectionViewCell.h */,
+				DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */,
+				DCA09EB31AFE03B100D96118 /* DateCollectionViewCell.xib */,
+				DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
 		DCA09E711AFDF27D00D96118 = {
 			isa = PBXGroup;
 			children = (
@@ -143,29 +168,12 @@
 		DCA09E7C1AFDF27D00D96118 /* TimelineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC62B4381B04A99300158525 /* Timeline */,
 				DCA09E811AFDF27D00D96118 /* AppDelegate.h */,
 				DCA09E821AFDF27D00D96118 /* AppDelegate.m */,
 				DCA09E841AFDF27D00D96118 /* ViewController.h */,
 				DCA09E851AFDF27D00D96118 /* ViewController.m */,
 				DCA09E871AFDF27D00D96118 /* Main.storyboard */,
-				DCA09EA91AFDF9C300D96118 /* TimelineView.h */,
-				DCA09EAA1AFDF9C300D96118 /* TimelineView.m */,
-				DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */,
-				DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */,
-				DCB27E981B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.h */,
-				DCB27E991B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m */,
-				DC13F5C11AFF606200017A33 /* NumberView.h */,
-				DC13F5C21AFF606200017A33 /* NumberView.m */,
-				DC13F5BB1AFF604D00017A33 /* NumberCollectionViewCell.h */,
-				DC13F5BC1AFF604D00017A33 /* NumberCollectionViewCell.m */,
-				DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */,
-				DCA09EAC1AFE039C00D96118 /* TimelineCollectionViewCell.h */,
-				DCA09EAD1AFE039C00D96118 /* TimelineCollectionViewCell.m */,
-				DCA09EAE1AFE039C00D96118 /* TimelineCollectionViewCell.xib */,
-				DCA09EB11AFE03B100D96118 /* DateCollectionViewCell.h */,
-				DCA09EB21AFE03B100D96118 /* DateCollectionViewCell.m */,
-				DCA09EB31AFE03B100D96118 /* DateCollectionViewCell.xib */,
-				DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */,
 				DCA09E8A1AFDF27D00D96118 /* Images.xcassets */,
 				DCA09E8C1AFDF27D00D96118 /* LaunchScreen.xib */,
 				DCA09E7D1AFDF27D00D96118 /* Supporting Files */,
@@ -345,7 +353,7 @@
 				DC13F5BE1AFF604D00017A33 /* NumberCollectionViewCell.m in Sources */,
 				DCA09EA81AFDF96700D96118 /* TimelineCollectionViewLayout.m in Sources */,
 				DCB27E9A1B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m in Sources */,
-				DCA09EAB1AFDF9C300D96118 /* TimelineView.m in Sources */,
+				DCA09EAB1AFDF9C300D96118 /* TimelineCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

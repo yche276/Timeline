@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Mt Zendo Inc. All rights reserved.
 //
 
-#import "TimelineView.h"
+#import "TimelineCollectionView.h"
 #import "DigitalMt.h"
 
-@implementation TimelineView
+@implementation TimelineCollectionView
 
 
 // Only override drawRect: if you perform custom drawing.

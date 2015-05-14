@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimelineView : UICollectionView
+@interface TimelineCollectionView : UICollectionView {
+    
+}
 
 @end
