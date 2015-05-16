@@ -10,14 +10,33 @@
 		DC13F5BE1AFF604D00017A33 /* NumberCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC13F5BC1AFF604D00017A33 /* NumberCollectionViewCell.m */; };
 		DC13F5BF1AFF604D00017A33 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */; };
 		DC13F5C31AFF606200017A33 /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC13F5C21AFF606200017A33 /* NumberView.m */; };
+		DC62B43B1B04AD3100158525 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B43A1B04AD3100158525 /* DetailViewController.m */; };
+		DC62B4431B04C94700158525 /* PredefinedColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC62B4421B04C94700158525 /* PredefinedColors.plist */; };
 		DC953B101B00A16500374724 /* DateCollectionViewCell-RightSide.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */; };
+		DC9B3F101B07156A009EC1D7 /* MapCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3EF51B07156A009EC1D7 /* MapCollectionViewCell.m */; };
+		DC9B3F111B07156A009EC1D7 /* MapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3EF61B07156A009EC1D7 /* MapCollectionViewCell.xib */; };
+		DC9B3F121B07156A009EC1D7 /* NoteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3EF81B07156A009EC1D7 /* NoteCollectionViewCell.m */; };
+		DC9B3F131B07156A009EC1D7 /* NoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3EF91B07156A009EC1D7 /* NoteCollectionViewCell.xib */; };
+		DC9B3F141B07156A009EC1D7 /* PBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3EFB1B07156A009EC1D7 /* PBCollectionViewCell.m */; };
+		DC9B3F151B07156A009EC1D7 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3EFD1B07156A009EC1D7 /* PhotoCollectionViewCell.m */; };
+		DC9B3F161B07156A009EC1D7 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3EFE1B07156A009EC1D7 /* PhotoCollectionViewCell.xib */; };
+		DC9B3F171B07156A009EC1D7 /* PlacesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F001B07156A009EC1D7 /* PlacesCollectionViewCell.m */; };
+		DC9B3F181B07156A009EC1D7 /* PlacesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3F011B07156A009EC1D7 /* PlacesCollectionViewCell.xib */; };
+		DC9B3F191B07156A009EC1D7 /* TileCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F031B07156A009EC1D7 /* TileCollectionViewLayout.m */; };
+		DC9B3F1A1B07156A009EC1D7 /* ToDoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F051B07156A009EC1D7 /* ToDoCollectionViewCell.m */; };
+		DC9B3F1B1B07156A009EC1D7 /* ToDoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3F061B07156A009EC1D7 /* ToDoCollectionViewCell.xib */; };
+		DC9B3F1C1B07156A009EC1D7 /* TopMomentsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F081B07156A009EC1D7 /* TopMomentsCollectionViewCell.m */; };
+		DC9B3F1D1B07156A009EC1D7 /* TopMomentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3F091B07156A009EC1D7 /* TopMomentsCollectionViewCell.xib */; };
+		DC9B3F1E1B07156A009EC1D7 /* TripDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F0B1B07156A009EC1D7 /* TripDetailCollectionViewCell.m */; };
+		DC9B3F1F1B07156A009EC1D7 /* TripDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3F0C1B07156A009EC1D7 /* TripDetailCollectionViewCell.xib */; };
+		DC9B3F201B07156A009EC1D7 /* WeatherCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9B3F0E1B07156A009EC1D7 /* WeatherCollectionViewCell.m */; };
+		DC9B3F211B07156A009EC1D7 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9B3F0F1B07156A009EC1D7 /* WeatherCollectionViewCell.xib */; };
 		DCA09E801AFDF27D00D96118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E7F1AFDF27D00D96118 /* main.m */; };
 		DCA09E831AFDF27D00D96118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E821AFDF27D00D96118 /* AppDelegate.m */; };
 		DCA09E861AFDF27D00D96118 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E851AFDF27D00D96118 /* ViewController.m */; };
 		DCA09E891AFDF27D00D96118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA09E871AFDF27D00D96118 /* Main.storyboard */; };
 		DCA09E8B1AFDF27D00D96118 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA09E8A1AFDF27D00D96118 /* Images.xcassets */; };
 		DCA09E8E1AFDF27D00D96118 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA09E8C1AFDF27D00D96118 /* LaunchScreen.xib */; };
-		DCA09E9A1AFDF27D00D96118 /* TimelineDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09E991AFDF27D00D96118 /* TimelineDemoTests.m */; };
 		DCA09EA81AFDF96700D96118 /* TimelineCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EA61AFDF96700D96118 /* TimelineCollectionViewLayout.m */; };
 		DCA09EAB1AFDF9C300D96118 /* TimelineCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EAA1AFDF9C300D96118 /* TimelineCollectionView.m */; };
 		DCA09EAF1AFE039C00D96118 /* TimelineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA09EAD1AFE039C00D96118 /* TimelineCollectionViewCell.m */; };
@@ -31,13 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DCA09E941AFDF27D00D96118 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DCA09E721AFDF27D00D96118 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DCA09E791AFDF27D00D96118;
-			remoteInfo = TimelineDemo;
-		};
 		DCE51FC01AFE3478000F5763 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCE51FBB1AFE3477000F5763 /* MtZendoLib.xcodeproj */;
@@ -67,8 +79,39 @@
 		DC13F5BD1AFF604D00017A33 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC13F5C11AFF606200017A33 /* NumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
 		DC13F5C21AFF606200017A33 /* NumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
+		DC62B4391B04AD3100158525 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DC62B43A1B04AD3100158525 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DC62B4421B04C94700158525 /* PredefinedColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PredefinedColors.plist; sourceTree = "<group>"; };
 		DC953B0F1B00A16500374724 /* DateCollectionViewCell-RightSide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DateCollectionViewCell-RightSide.xib"; sourceTree = "<group>"; };
-		DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9B3EF41B07156A009EC1D7 /* MapCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapCollectionViewCell.h; path = Detail/MapCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3EF51B07156A009EC1D7 /* MapCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapCollectionViewCell.m; path = Detail/MapCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3EF61B07156A009EC1D7 /* MapCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapCollectionViewCell.xib; path = Detail/MapCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3EF71B07156A009EC1D7 /* NoteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCollectionViewCell.h; path = Detail/NoteCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3EF81B07156A009EC1D7 /* NoteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteCollectionViewCell.m; path = Detail/NoteCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3EF91B07156A009EC1D7 /* NoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCollectionViewCell.xib; path = Detail/NoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3EFA1B07156A009EC1D7 /* PBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBCollectionViewCell.h; path = Detail/PBCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3EFB1B07156A009EC1D7 /* PBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBCollectionViewCell.m; path = Detail/PBCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3EFC1B07156A009EC1D7 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCollectionViewCell.h; path = Detail/PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3EFD1B07156A009EC1D7 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCollectionViewCell.m; path = Detail/PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3EFE1B07156A009EC1D7 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCollectionViewCell.xib; path = Detail/PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3EFF1B07156A009EC1D7 /* PlacesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesCollectionViewCell.h; path = Detail/PlacesCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3F001B07156A009EC1D7 /* PlacesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesCollectionViewCell.m; path = Detail/PlacesCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3F011B07156A009EC1D7 /* PlacesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlacesCollectionViewCell.xib; path = Detail/PlacesCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3F021B07156A009EC1D7 /* TileCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileCollectionViewLayout.h; path = Detail/TileCollectionViewLayout.h; sourceTree = "<group>"; };
+		DC9B3F031B07156A009EC1D7 /* TileCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileCollectionViewLayout.m; path = Detail/TileCollectionViewLayout.m; sourceTree = "<group>"; };
+		DC9B3F041B07156A009EC1D7 /* ToDoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToDoCollectionViewCell.h; path = Detail/ToDoCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3F051B07156A009EC1D7 /* ToDoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDoCollectionViewCell.m; path = Detail/ToDoCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3F061B07156A009EC1D7 /* ToDoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToDoCollectionViewCell.xib; path = Detail/ToDoCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3F071B07156A009EC1D7 /* TopMomentsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopMomentsCollectionViewCell.h; path = Detail/TopMomentsCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3F081B07156A009EC1D7 /* TopMomentsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopMomentsCollectionViewCell.m; path = Detail/TopMomentsCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3F091B07156A009EC1D7 /* TopMomentsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopMomentsCollectionViewCell.xib; path = Detail/TopMomentsCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3F0A1B07156A009EC1D7 /* TripDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripDetailCollectionViewCell.h; path = Detail/TripDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3F0B1B07156A009EC1D7 /* TripDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TripDetailCollectionViewCell.m; path = Detail/TripDetailCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3F0C1B07156A009EC1D7 /* TripDetailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TripDetailCollectionViewCell.xib; path = Detail/TripDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC9B3F0D1B07156A009EC1D7 /* WeatherCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherCollectionViewCell.h; path = Detail/WeatherCollectionViewCell.h; sourceTree = "<group>"; };
+		DC9B3F0E1B07156A009EC1D7 /* WeatherCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherCollectionViewCell.m; path = Detail/WeatherCollectionViewCell.m; sourceTree = "<group>"; };
+		DC9B3F0F1B07156A009EC1D7 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherCollectionViewCell.xib; path = Detail/WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
+		DCA09E7A1AFDF27D00D96118 /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA09E7E1AFDF27D00D96118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA09E7F1AFDF27D00D96118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCA09E811AFDF27D00D96118 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,7 +121,6 @@
 		DCA09E881AFDF27D00D96118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCA09E8A1AFDF27D00D96118 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCA09E8D1AFDF27D00D96118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA09E981AFDF27D00D96118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA09E991AFDF27D00D96118 /* TimelineDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineDemoTests.m; sourceTree = "<group>"; };
 		DCA09EA51AFDF96700D96118 /* TimelineCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -106,13 +148,6 @@
 				DCE51FCA1AFE358B000F5763 /* CoreData.framework in Frameworks */,
 				DCE51FC81AFE34C8000F5763 /* libMtZendoLib.a in Frameworks */,
 				DCE51FC71AFE3498000F5763 /* CoreMotion.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCA09E901AFDF27D00D96118 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +179,41 @@
 			name = Timeline;
 			sourceTree = "<group>";
 		};
+		DC62B43C1B04AE6E00158525 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B3EF41B07156A009EC1D7 /* MapCollectionViewCell.h */,
+				DC9B3EF51B07156A009EC1D7 /* MapCollectionViewCell.m */,
+				DC9B3EF61B07156A009EC1D7 /* MapCollectionViewCell.xib */,
+				DC9B3EF71B07156A009EC1D7 /* NoteCollectionViewCell.h */,
+				DC9B3EF81B07156A009EC1D7 /* NoteCollectionViewCell.m */,
+				DC9B3EF91B07156A009EC1D7 /* NoteCollectionViewCell.xib */,
+				DC9B3EFA1B07156A009EC1D7 /* PBCollectionViewCell.h */,
+				DC9B3EFB1B07156A009EC1D7 /* PBCollectionViewCell.m */,
+				DC9B3EFC1B07156A009EC1D7 /* PhotoCollectionViewCell.h */,
+				DC9B3EFD1B07156A009EC1D7 /* PhotoCollectionViewCell.m */,
+				DC9B3EFE1B07156A009EC1D7 /* PhotoCollectionViewCell.xib */,
+				DC9B3EFF1B07156A009EC1D7 /* PlacesCollectionViewCell.h */,
+				DC9B3F001B07156A009EC1D7 /* PlacesCollectionViewCell.m */,
+				DC9B3F011B07156A009EC1D7 /* PlacesCollectionViewCell.xib */,
+				DC9B3F021B07156A009EC1D7 /* TileCollectionViewLayout.h */,
+				DC9B3F031B07156A009EC1D7 /* TileCollectionViewLayout.m */,
+				DC9B3F041B07156A009EC1D7 /* ToDoCollectionViewCell.h */,
+				DC9B3F051B07156A009EC1D7 /* ToDoCollectionViewCell.m */,
+				DC9B3F061B07156A009EC1D7 /* ToDoCollectionViewCell.xib */,
+				DC9B3F071B07156A009EC1D7 /* TopMomentsCollectionViewCell.h */,
+				DC9B3F081B07156A009EC1D7 /* TopMomentsCollectionViewCell.m */,
+				DC9B3F091B07156A009EC1D7 /* TopMomentsCollectionViewCell.xib */,
+				DC9B3F0A1B07156A009EC1D7 /* TripDetailCollectionViewCell.h */,
+				DC9B3F0B1B07156A009EC1D7 /* TripDetailCollectionViewCell.m */,
+				DC9B3F0C1B07156A009EC1D7 /* TripDetailCollectionViewCell.xib */,
+				DC9B3F0D1B07156A009EC1D7 /* WeatherCollectionViewCell.h */,
+				DC9B3F0E1B07156A009EC1D7 /* WeatherCollectionViewCell.m */,
+				DC9B3F0F1B07156A009EC1D7 /* WeatherCollectionViewCell.xib */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		DCA09E711AFDF27D00D96118 = {
 			isa = PBXGroup;
 			children = (
@@ -159,8 +229,7 @@
 		DCA09E7B1AFDF27D00D96118 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */,
-				DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */,
+				DCA09E7A1AFDF27D00D96118 /* Timeline.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,11 +237,14 @@
 		DCA09E7C1AFDF27D00D96118 /* TimelineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC62B43C1B04AE6E00158525 /* Detail */,
 				DC62B4381B04A99300158525 /* Timeline */,
 				DCA09E811AFDF27D00D96118 /* AppDelegate.h */,
 				DCA09E821AFDF27D00D96118 /* AppDelegate.m */,
 				DCA09E841AFDF27D00D96118 /* ViewController.h */,
 				DCA09E851AFDF27D00D96118 /* ViewController.m */,
+				DC62B4391B04AD3100158525 /* DetailViewController.h */,
+				DC62B43A1B04AD3100158525 /* DetailViewController.m */,
 				DCA09E871AFDF27D00D96118 /* Main.storyboard */,
 				DCA09E8A1AFDF27D00D96118 /* Images.xcassets */,
 				DCA09E8C1AFDF27D00D96118 /* LaunchScreen.xib */,
@@ -184,6 +256,7 @@
 		DCA09E7D1AFDF27D00D96118 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC62B4421B04C94700158525 /* PredefinedColors.plist */,
 				DCA09E7E1AFDF27D00D96118 /* Info.plist */,
 				DCA09E7F1AFDF27D00D96118 /* main.m */,
 			);
@@ -234,26 +307,8 @@
 			);
 			name = Timeline;
 			productName = TimelineDemo;
-			productReference = DCA09E7A1AFDF27D00D96118 /* TimelineDemo.app */;
+			productReference = DCA09E7A1AFDF27D00D96118 /* Timeline.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DCA09E921AFDF27D00D96118 /* TimelineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineTests" */;
-			buildPhases = (
-				DCA09E8F1AFDF27D00D96118 /* Sources */,
-				DCA09E901AFDF27D00D96118 /* Frameworks */,
-				DCA09E911AFDF27D00D96118 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DCA09E951AFDF27D00D96118 /* PBXTargetDependency */,
-			);
-			name = TimelineTests;
-			productName = TimelineDemoTests;
-			productReference = DCA09E931AFDF27D00D96118 /* TimelineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -266,10 +321,6 @@
 				TargetAttributes = {
 					DCA09E791AFDF27D00D96118 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					DCA09E921AFDF27D00D96118 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = DCA09E791AFDF27D00D96118;
 					};
 				};
 			};
@@ -293,7 +344,6 @@
 			projectRoot = "";
 			targets = (
 				DCA09E791AFDF27D00D96118 /* Timeline */,
-				DCA09E921AFDF27D00D96118 /* TimelineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,20 +370,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC62B4431B04C94700158525 /* PredefinedColors.plist in Resources */,
 				DCA09E891AFDF27D00D96118 /* Main.storyboard in Resources */,
 				DCA09EB01AFE039C00D96118 /* TimelineCollectionViewCell.xib in Resources */,
 				DCA09E8E1AFDF27D00D96118 /* LaunchScreen.xib in Resources */,
 				DC953B101B00A16500374724 /* DateCollectionViewCell-RightSide.xib in Resources */,
+				DC9B3F211B07156A009EC1D7 /* WeatherCollectionViewCell.xib in Resources */,
 				DCA09EB51AFE03B100D96118 /* DateCollectionViewCell.xib in Resources */,
 				DCA09E8B1AFDF27D00D96118 /* Images.xcassets in Resources */,
+				DC9B3F111B07156A009EC1D7 /* MapCollectionViewCell.xib in Resources */,
+				DC9B3F1B1B07156A009EC1D7 /* ToDoCollectionViewCell.xib in Resources */,
+				DC9B3F181B07156A009EC1D7 /* PlacesCollectionViewCell.xib in Resources */,
+				DC9B3F131B07156A009EC1D7 /* NoteCollectionViewCell.xib in Resources */,
+				DC9B3F161B07156A009EC1D7 /* PhotoCollectionViewCell.xib in Resources */,
+				DC9B3F1F1B07156A009EC1D7 /* TripDetailCollectionViewCell.xib in Resources */,
+				DC9B3F1D1B07156A009EC1D7 /* TopMomentsCollectionViewCell.xib in Resources */,
 				DC13F5BF1AFF604D00017A33 /* NumberCollectionViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCA09E911AFDF27D00D96118 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,35 +396,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9B3F1C1B07156A009EC1D7 /* TopMomentsCollectionViewCell.m in Sources */,
+				DC9B3F1A1B07156A009EC1D7 /* ToDoCollectionViewCell.m in Sources */,
+				DC9B3F121B07156A009EC1D7 /* NoteCollectionViewCell.m in Sources */,
 				DCA09E861AFDF27D00D96118 /* ViewController.m in Sources */,
 				DCA09EB41AFE03B100D96118 /* DateCollectionViewCell.m in Sources */,
 				DC13F5C31AFF606200017A33 /* NumberView.m in Sources */,
+				DC9B3F171B07156A009EC1D7 /* PlacesCollectionViewCell.m in Sources */,
 				DCA09EAF1AFE039C00D96118 /* TimelineCollectionViewCell.m in Sources */,
+				DC9B3F191B07156A009EC1D7 /* TileCollectionViewLayout.m in Sources */,
 				DCA09E831AFDF27D00D96118 /* AppDelegate.m in Sources */,
+				DC9B3F141B07156A009EC1D7 /* PBCollectionViewCell.m in Sources */,
 				DCA09E801AFDF27D00D96118 /* main.m in Sources */,
 				DC13F5BE1AFF604D00017A33 /* NumberCollectionViewCell.m in Sources */,
+				DC62B43B1B04AD3100158525 /* DetailViewController.m in Sources */,
+				DC9B3F1E1B07156A009EC1D7 /* TripDetailCollectionViewCell.m in Sources */,
 				DCA09EA81AFDF96700D96118 /* TimelineCollectionViewLayout.m in Sources */,
 				DCB27E9A1B02086E007E50FF /* UICollectionViewLayoutAttributesWithAnimation.m in Sources */,
+				DC9B3F201B07156A009EC1D7 /* WeatherCollectionViewCell.m in Sources */,
 				DCA09EAB1AFDF9C300D96118 /* TimelineCollectionView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCA09E8F1AFDF27D00D96118 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCA09E9A1AFDF27D00D96118 /* TimelineDemoTests.m in Sources */,
+				DC9B3F151B07156A009EC1D7 /* PhotoCollectionViewCell.m in Sources */,
+				DC9B3F101B07156A009EC1D7 /* MapCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DCA09E951AFDF27D00D96118 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DCA09E791AFDF27D00D96118 /* Timeline */;
-			targetProxy = DCA09E941AFDF27D00D96118 /* PBXContainerItemProxy */;
-		};
 		DCE51FC51AFE348E000F5763 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MtZendoLib;
@@ -528,40 +578,6 @@
 			};
 			name = Release;
 		};
-		DCA09EA11AFDF27D00D96118 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TimelineDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = TimelineTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimelineDemo.app/TimelineDemo";
-			};
-			name = Debug;
-		};
-		DCA09EA21AFDF27D00D96118 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TimelineDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = TimelineTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimelineDemo.app/TimelineDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +595,6 @@
 			buildConfigurations = (
 				DCA09E9E1AFDF27D00D96118 /* Debug */,
 				DCA09E9F1AFDF27D00D96118 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DCA09EA01AFDF27D00D96118 /* Build configuration list for PBXNativeTarget "TimelineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCA09EA11AFDF27D00D96118 /* Debug */,
-				DCA09EA21AFDF27D00D96118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

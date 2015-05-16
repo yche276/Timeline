@@ -16,6 +16,8 @@
 #import "TimelineCollectionViewLayout.h"
 #import "DigitalMt.h"
 
+#import "DetailViewController.h"
+
 
 static NSString *_timelineCellIdentifier = @"TIMELINE_CELL";
 
@@ -125,7 +127,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
             cell.backgroundColor = [UIColor clearColor];
             
             NumberCollectionViewCell *numberCell = (NumberCollectionViewCell *) cell;
-            numberCell.numView.titleLabel.text = [NSString stringWithFormat:@"%ld", row+1];
+            numberCell.numView.titleLabel.text = [NSString stringWithFormat:@"%ld", (long)row+1];
             
             
         }
@@ -171,7 +173,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
             cell = (NumberCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:_numberCellllIdentifier forIndexPath:indexPath];
             cell.backgroundColor = [UIColor clearColor];
             NumberCollectionViewCell *numberCell = (NumberCollectionViewCell *) cell;
-            numberCell.numView.titleLabel.text = [NSString stringWithFormat:@"%ld", row+1];
+            numberCell.numView.titleLabel.text = [NSString stringWithFormat:@"%ld", (long)row+1];
         }
         else if (column == 2) {
             cell = (DateCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:_dateCellRightSideIdentifier forIndexPath:indexPath];
@@ -204,9 +206,7 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
             
         }
     }
-    
     return cell;
-    
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -214,6 +214,16 @@ static NSString *_numberCellllIdentifier = @"NUMBER_CELL";
 {
     NSInteger row = indexPath.row/self.layout.numberOfColumns;
     NSLog(@"clicked on Row:%ld", (long)row);
+    
+    
+    UIStoryboard *sb = sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    
+    if (sb) {
+        DetailViewController *controller = (DetailViewController *)[sb instantiateViewControllerWithIdentifier:NSStringFromClass([DetailViewController class])];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    
 }
 
 

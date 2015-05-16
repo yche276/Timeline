@@ -45,6 +45,44 @@
             </objects>
             <point key="canvasLocation" x="1586" y="-146"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="oV4-d3-efb">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="aHy-rd-F7i" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qy3-vI-JCk"/>
+                        <viewControllerLayoutGuide type="bottom" id="R7p-xJ-ke3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CfQ-cS-yJj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-G6-TVX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewLayout key="collectionViewLayout" id="8H3-EM-iKn" customClass="TileCollectionViewLayout"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aHy-rd-F7i" id="mfW-sQ-nIC"/>
+                                    <outlet property="delegate" destination="aHy-rd-F7i" id="Clg-8U-p0o"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Awm-G6-TVX" firstAttribute="leading" secondItem="CfQ-cS-yJj" secondAttribute="leading" id="83a-z5-v1U"/>
+                            <constraint firstItem="Awm-G6-TVX" firstAttribute="top" secondItem="CfQ-cS-yJj" secondAttribute="top" id="qKX-PK-TiO"/>
+                            <constraint firstAttribute="trailing" secondItem="Awm-G6-TVX" secondAttribute="trailing" id="tE3-5j-bIe"/>
+                            <constraint firstItem="Awm-G6-TVX" firstAttribute="bottom" secondItem="R7p-xJ-ke3" secondAttribute="top" id="wBx-ZI-R6m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Awm-G6-TVX" id="FoN-8c-XjM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlq-kv-EpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="-146"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asx-rH-XwO">
             <objects>

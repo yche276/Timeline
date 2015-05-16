@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>100</integer>
+			<integer>149</integer>
+			<integer>237</integer>
+		</array>
+		<key>name</key>
+		<string>Cornflower Blue</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>70</integer>
+			<integer>130</integer>
+			<integer>180</integer>
+		</array>
+		<key>name</key>
+		<string>Steel Blue</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>51</integer>
+			<integer>41</integer>
+			<integer>118</integer>
+		</array>
+		<key>name</key>
+		<string>Purple</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>103</integer>
+			<integer>188</integer>
+			<integer>64</integer>
+		</array>
+		<key>name</key>
+		<string>Green</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>234</integer>
+			<integer>185</integer>
+			<integer>32</integer>
+		</array>
+		<key>name</key>
+		<string>Yellow</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>234</integer>
+			<integer>143</integer>
+			<integer>78</integer>
+		</array>
+		<key>name</key>
+		<string>Orange</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>226</integer>
+			<integer>98</integer>
+			<integer>244</integer>
+		</array>
+		<key>name</key>
+		<string>Magenta</string>
+	</dict>
+	<dict>
+		<key>values</key>
+		<array>
+			<integer>149</integer>
+			<integer>149</integer>
+			<integer>149</integer>
+		</array>
+		<key>name</key>
+		<string>Grey</string>
+	</dict>
+</array>
+</plist>
