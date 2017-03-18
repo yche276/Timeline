@@ -1,5 +1,4 @@
 # Timeline
-# LoopingCollectionView
 
 ![alt tag](https://github.com/yche276/Timeline/blob/master/Doc/ScreenShot1.png)
 
